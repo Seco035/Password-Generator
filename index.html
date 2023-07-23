@@ -3,36 +3,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Password Generator</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Password Generator</h1>
+        <h2 class="title">Password Generator</h2>
         <div class="passwordInput">
-            <input type="text" class="password" placeholder="Password">
-            <img width="20" src="copy.png">
+            <input type="text" class="password" placeholder="Password" readonly>
+            <img id="img" src="copy.png">
         </div>
-        <div class="range">
+        
+        <div class="copied"></div>
+
+        <div class="inputContainer">
             <h5>Password Length:</h5>
-            <span>4</span>
-            <input type="range" name="password length" id="length">
+            <span class="lengthSpan">4</span>
+            <input type="range" name="password length" id="length" min="4" max="25" value="4">
         </div>
         <div class="inputContainer">
             <label for="uppercase">İnclude Uppercase</label>
-            <input type="checkbox" name="uppercase" id="uppercase" checked>
+            <input type="checkbox" name="uppercase" id="uppercase">
             <span class="toggle"></span>
         </div>
         <div class="inputContainer">
             <label for="numbers">İnclude Numbers</label>
-            <input type="checkbox" name="numbers" id="numbers" checked>
+            <input type="checkbox" name="numbers" id="numbers">
             <span class="toggle"></span>
         </div>
         <div class="inputContainer">
             <label for="symbols">İnclude Symbols</label>
-            <input type="checkbox" name="symbols" id="symbols" checked>
+            <input type="checkbox" name="symbols" id="symbols">
             <span class="toggle"></span>
         </div>
-        <button class="generate">GENERATE PASSWORD</button>
+        <div class="button">
+            <button class="generate">GENERATE PASSWORD</button>
+        </div>
     </div>
 
     <script src="app.js"></script>

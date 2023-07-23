@@ -5,24 +5,121 @@
 }
 
 body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #131417;
     height: 100vh;
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 .container{
+    background-color: #1e1f26;
     width: 30%;
-    height: 60vh;
     margin: auto;
-    border: 2px solid red;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.passwordInput{
+    background-color: #2d2f3e;
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.password{
+    color: #fff;
+    background-color: #2d2f3e;
+    width: 93%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: large;
+    outline: none;
+    cursor: pointer;
+}
+
+img{
+    margin: .6rem;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+img:hover{
+    padding: 2px;
+}
+
+h2{
+    margin-bottom: 1rem;
 }
 
 .inputContainer{
-    width: 95%;
+    background-color: #2d2f3e;
+    width: 92%;
+    height: 50px;
     display: flex;
     align-items: center;
     margin: auto;
-    border: solid red 2px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0rem .4rem;
+    font-size: large;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 50%; 
+    height: 11px;
+    background: #1e1f26;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 3px;
+    cursor: pointer;
+}
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none; 
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+  
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer; 
+  }
+  
+input[type=range]::-moz-range-thumb {
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+input[type=range]::-ms-thumb {
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .toggle {
@@ -30,7 +127,7 @@ body{
     display: inline-block;
     width: 40px;
     height: 20px;
-    background-color: #ccc;
+    background-color: #1e1f26;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -53,23 +150,28 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked + .toggle:before {
     transform: translateX(20px);
-    background-color: #4CAF50;
+    background-color: #fff;
 }
 
-.passwordInput{
-    width: 95%;
-    border: 2px red solid;
-    margin: auto;
+input[type="checkbox"]:not(:checked) + .toggle {
+    background-color: #7a7777aa;
+}
+
+.button{
     display: flex;
-    justify-content: space-between;
-    border-radius: 6px;
+    justify-content: center;
 }
-
-.password{
-    width: 93%;
+button{
+    width: 95%;
     height: 40px;
+    font-size: medium;
     border-radius: 5px;
+    background-color: #2d2f3e;
+    margin-top: 1rem;
+    color: #fff;
     border: none;
-    text-align: center;
-    font-size: large;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px solid #ccc;
 }
