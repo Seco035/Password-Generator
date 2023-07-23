@@ -21,6 +21,7 @@ body{
     padding-bottom: 30px;
     border-radius: 8px;
     text-align: center;
+    box-shadow: rgb(255, 255, 255) 0px  5px 45px;
 }
 
 .passwordInput{
@@ -30,6 +31,7 @@ body{
     display: flex;
     justify-content: space-between;
     border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .password{
@@ -42,7 +44,7 @@ body{
     text-align: center;
     font-size: large;
     outline: none;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 img{
@@ -73,11 +75,13 @@ h2{
     margin-top: 1rem;
     padding: 0rem .4rem;
     font-size: large;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 input[type=range] {
     -webkit-appearance: none;
-    width: 50%; 
+    width: 68%; 
     height: 11px;
     background: #1e1f26;
     border-radius: 5px;
@@ -120,6 +124,10 @@ input[type=range]::-moz-range-thumb {
 input[type=range]::-ms-thumb {
     border-radius: 50%;
     cursor: pointer;
+}
+
+.lengthSpan{
+
 }
 
 .toggle {

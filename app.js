@@ -30,11 +30,10 @@ let passwordInput = document.querySelector(".password")
 
  passwordInput.value=password
 
-  setTimeout(() =>{
-    passwordInput.value = "";
-    passwordInput.setAttribute("placeholder","Password")
-  },5000)
- 
+  // setTimeout(() =>{
+  //   passwordInput.value = "";
+  //   passwordInput.setAttribute("placeholder","Password")
+  // },5000)
 })
 
 let lengthSpan = document.querySelector(".lengthSpan"),
@@ -61,9 +60,9 @@ document.querySelector("#img").addEventListener("click", function(){
   navigator.clipboard.writeText(randomPassword.value)
   .then(() => {  
     copied.innerHTML = "Password copied";
-    copied.style.display=
+    copied.style.display="block"
     setTimeout(() => {
       copied.style.display = "none"
-    }, 2500)
+    }, 2000)
   })
 })
