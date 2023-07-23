@@ -29,11 +29,6 @@ document.querySelector(".generate").addEventListener("click",function(){
 let passwordInput = document.querySelector(".password")
 
  passwordInput.value=password
-
-  // setTimeout(() =>{
-  //   passwordInput.value = "";
-  //   passwordInput.setAttribute("placeholder","Password")
-  // },5000)
 })
 
 let lengthSpan = document.querySelector(".lengthSpan"),
